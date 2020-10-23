@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="control.js" language="javascript" type="text/javascript"></script>
+    <style>
+        .centrado {
+            text-align: center;
+
+        }
+        .ajuste {
+            padding-left: 1%;
+        }
+        .caja{
+            width: 10%;
+        }
+    </style>
+    <title>Formulario con JS</title>
+</head>
+<body class="centrado">
+    <h3 >Ingreso al sistema</h3>
+    <form name ="formu" action="control.js" onsubmit="return validateForm()" method="post">
+        <label for="fname">Usuario:</label>
+  <input class="caja"type="text" id="fname" name="fname" value=""><br>
+  <label class="ajuste"for="lname">Clave:</label>
+  <input class="caja" type="text" id="pclave" name="pclave" value= ""><br><br>
+  <input type="submit" value="ingresar">
+    </form>
+</body>
+</html>
